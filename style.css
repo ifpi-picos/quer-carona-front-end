@@ -112,9 +112,21 @@ h2 {
 }
 
 .BotaoEntrar {
-    width: 281px;
+    width: 280px;
     height: 31px;
     padding: 3px;
-    margin-right: 14px;
+    margin-right: 15px;
     font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.linha {
+    border: 1px solid yellow;
+    width: 119px;
+    margin-left: 40px;
+}
+#linha1 {
+}
+#linha2 {
+    display: contents;
 }
