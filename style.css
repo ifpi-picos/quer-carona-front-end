@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+:root {
+    --fundo: #0A0A0A;
+    --titulo: #ffffff;
+    --text: #BCBCBC;
+    --atention: #F3B507;
+
+
+    --fonte: 'Raleway', cursive;
+}
 
 * {
     padding: 0;
@@ -6,87 +17,104 @@
 }
 
 body {
-    background-color: #F3B507;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/*Cabelhaço*/
-header.cabecalho {
+    position: relative;
     width: 360px;
-    height: 200px;
-    text-align: center;
-    font-size: 16px;
-    margin-top: 12px;
-    color: #474747;
+    height: 640px;
+    font-family: var(--fonte);
+    background-color: var(--fundo);
 }
 
-nav.menu {
-    position: absolute;
-    width: 325px;
-    height: 52px;
-    left: 17px;
-    top: 74px;
-    color: white;
-    font-size: 22px;
-
-}
-
-div.login {
-    width: 153.36px;
-    height: 52px;
-    left: 17px;
-    top: 74px;
-    background: #737373;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-}
-
-div.login p {
+.imagem {
     padding: 10px;
 }
 
-div.cadastro {
-    position: absolute;
-    width: 153.36px;
-    height: 52px;
-    left: 175px;
-    top: 0px;
-
-    background: #737373;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-}
-
-div.cadastro p {
-    padding: 10px;
-}
-
-main p {
-    font-size: 26px;
-    color: #FAF2E1;
-    padding: 20px;
+header {
+    color: var(--titulo);
+    margin: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 34px;
+    padding-left: 30px;
 
 }
 
-main img {
+.container-email {
+    color: var(--text);
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+
+    color: var(--text);
+    padding-left: 30px;
+    margin-top: 100px;
+
+
+}
+
+.email {
+    width: 275px;
+    height: 31px;
     margin-left: 30px;
+    margin-top: 5px;
+    background: #0A0A0A;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 15px;
 }
 
-div.rodape {
-    width: 222px;
-    height: 55px;
-    left: 69px;
-    top: 560px;
-    background: #737373;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
+.container-senha {
+    width: 99px;
+    height: 38px;
+    font-weight: 600;
+    line-height: 34px;
+    padding-left: 30px;
+    margin-top: 20px;
+
+
+    font-size: 25px;
+
+    color: var(--text)
 }
-div.rodape p {
-    font-size: 22px;
-    color: white;
+
+.senha {
+    width: 275px;
+    height: 31px;
+    left: 40px;
+    top: 228px;
+
+    background: #0A0A0A;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    margin-left: 30px;
+    padding: 3px;
+    font-size: 15px;
+    background-image: url(/imagens/olhinho.png) !important;
+    background: no-repeat;
+    background-position-y: center;
+    background-position-x: 97%;
+}
+
+h2 {
+    color: var(--atention);
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#botao {
     text-align: center;
-    padding: 10px;
+}
+
+.BotaoEntrar {
+    width: 281px;
+    height: 31px;
+    padding: 3px;
+    margin-right: 14px;
+    font-size: 15px;
 }
