@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+:root {
+    --fundo: #0A0A0A;
+    --titulo: #ffffff;
+    --text: #BCBCBC;
+    --atention: #F3B507;
+
+
+    --fonte: 'Raleway', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    font-family: var(--fonte);
+    background-color: var(--fundo);
+}
+
+.imagem {
+    padding: 10px;
+}
+
+header {
+    color: var(--titulo);
+    margin: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 34px;
+    padding-left: 30px;
+
+}
+
+.container-email {
+    color: var(--text);
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+
+    color: var(--text);
+    padding-left: 30px;
+    margin-top: 100px;
+
+
+}
+
+.email {
+    width: 275px;
+    height: 31px;
+    margin-left: 30px;
+    margin-top: 5px;
+    background: #0A0A0A;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.container-senha {
+    width: 99px;
+    height: 38px;
+    font-weight: 600;
+    line-height: 34px;
+    padding-left: 30px;
+    margin-top: 20px;
+
+
+    font-size: 25px;
+
+    color: var(--text)
+}
+
+.senha {
+    width: 275px;
+    height: 31px;
+    left: 40px;
+    top: 228px;
+
+    background: #0A0A0A;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    margin-left: 30px;
+    padding: 3px;
+    font-size: 15px;
+    background-image: url(/imagens/olhinho.png) !important;
+    background: no-repeat;
+    background-position-y: center;
+    background-position-x: 97%;
+}
+
+h2 {
+    color: var(--atention);
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#botao {
+    text-align: center;
+}
+
+.BotaoEntrar {
+    width: 280px;
+    height: 31px;
+    padding: 3px;
+    margin-right: 15px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.linha {
+    border: 1px solid yellow;
+    width: 119px;
+    margin-left: 40px;
+}
+#linha1 {
+}
+#linha2 {
+    display: contents;
+}
