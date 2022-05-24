@@ -1,0 +1,14 @@
+div {
+    display: flex;
+    justify-content: space-around;
+}
+.sim {
+    background-color: blue;
+    width: 500px;
+    height: 50px;
+}
+.nao {
+    background-color: yellow;
+    width: 500px;
+    height: 50px;
+}
