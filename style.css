@@ -22,6 +22,7 @@ body {
     height: 640px;
     font-family: var(--fonte);
     background-color: var(--fundo);
+    margin: 0 auto;
 }
 /*############################Login########################*/
 .imagem {
