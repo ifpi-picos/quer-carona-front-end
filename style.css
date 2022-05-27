@@ -94,7 +94,7 @@ header {
     margin-left: 30px;
     padding: 3px;
     font-size: 15px;
-    background-image: url(/imagens/olhinho.png) !important;
+    background-image: url(imagens/olhinho.png) !important;
     background: no-repeat;
     background-position-y: center;
     background-position-x: 97%;
@@ -180,7 +180,7 @@ h2 a {
     border: 1px solid #4A4A4A;
     border-radius: 5px;
     background-color: #4A4A4A;
-    background-image: url(/imagens/apple.png) !important;
+    background-image: url(imagens/apple.png) !important;
     background: no-repeat;
     background-position-y: center;
     background-position-x: 3%;
@@ -201,7 +201,7 @@ h2 a {
     border: 1px solid #4A4A4A;
     border-radius: 5px;
     background-color: #4A4A4A;
-    background-image: url(/imagens/google.png) !important;
+    background-image: url(imagens/google.png) !important;
     background: no-repeat;
     background-position-y: center;
     background-position-x: 3%;
