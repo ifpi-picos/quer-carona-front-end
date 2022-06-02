@@ -65,5 +65,12 @@ main{
     font-size: 18px;
     line-height: 18px;
     
-    
+}
+.carona:hover{
+    background-color: #F3B507;
+    color: #0A0A0A;
+}
+.pegar:hover{
+    background-color: #F3B507;
+    color: #0A0A0A;
 }
