@@ -24,7 +24,9 @@ body {
     background-color: var(--fundo);
     margin: 0 auto;
 }
-
+input {
+    color: white;
+}
 /*############################Login########################*/
 .imagem {
     padding: 10px;
