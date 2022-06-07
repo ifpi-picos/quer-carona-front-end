@@ -18,15 +18,17 @@
 
 body {
     position: relative;
-    width: 360px; 
+    width: 360px;
     height: 640px;
     font-family: var(--fonte);
     background-color: var(--fundo);
     margin: 0 auto;
 }
-input {
+
+input#cor {
     color: white;
 }
+
 /*############################Login########################*/
 .imagem {
     padding: 10px;
@@ -111,16 +113,18 @@ header {
     margin-top: 10px;
     margin-bottom: 40px;
 }
+
 h2 a {
     text-decoration: none;
     color: var(--atention);
 }
+
 #botao {
     text-align: center;
 }
 
 .BotaoEntrar {
-    width: 280px;
+    width: 285px;
     height: 31px;
     padding: 3px;
     margin-right: 15px;
@@ -173,7 +177,7 @@ h2 a {
     text-align: center;
 }
 
-.EntrarApple {
+.configbutton {
     color: white;
     width: 280px;
     height: 31px;
@@ -194,21 +198,8 @@ h2 a {
     text-align: center;
 }
 
-.EntrarGoogle {
-    color: white;
-    width: 280px;
-    height: 31px;
-    padding: 3px;
-    margin-right: 15px;
-    font-size: 15px;
-    margin-bottom: 8px;
-    border: 1px solid #4A4A4A;
-    border-radius: 5px;
-    background-color: #4A4A4A;
+#txtgoogle {
     background-image: url(imagens/google.png) !important;
-    background: no-repeat;
-    background-position-y: center;
-    background-position-x: 3%;
 }
 
 #conta {
@@ -236,45 +227,42 @@ footer {
     color: white;
     padding: 30px;
 }
+
 footer a {
     text-decoration: none;
     color: var(--atention);
 }
+
 /*############################Cadastro########################*/
 .seta {
     padding: 10px;
 }
+
 .titulo {
     font-size: 25px;
 }
-.ContinuarEmail {
-    width: 284px;
-    height: 31px;
-    padding: 5px;
-    margin-right: 15px;
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    background: #FFFFFF;
-    border-radius: 5px;
-}
+
 .possuilogin {
     color: white;
     text-align: center;
     font-size: 10px;
     margin-bottom: 50px;
 }
+
 .possuilogin a {
     text-decoration: none;
     color: var(--atention);
-    
+
 }
+
 /*##################Recuperar senha####################*/
 .recuperar {
     font-size: 25px;
     color: white;
 }
-.selecion:hover{
-    background-color: #F3B507;
+
+.selecion:hover {
+    background-color: var(--atention);
     color: #0A0A0A;
+    transition: 0.5s;
 }
