@@ -25,7 +25,7 @@ body {
     margin: 0 auto;
 }
 
-input#cor {
+input.cor {
     color: white;
 }
 
@@ -265,4 +265,5 @@ footer a {
     background-color: var(--atention);
     color: #0A0A0A;
     transition: 0.5s;
+    cursor: pointer;
 }
