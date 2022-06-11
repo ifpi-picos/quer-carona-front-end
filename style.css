@@ -240,6 +240,7 @@ footer a {
 
 .titulo {
     font-size: 25px;
+    margin-bottom: 50px;
 }
 
 .possuilogin {
@@ -266,4 +267,85 @@ footer a {
     color: #0A0A0A;
     transition: 0.5s;
     cursor: pointer;
+}
+
+/*###################Dar carona########################*/
+form {
+    margin-top: 50px;
+}
+form label {
+    font-size: 15px;
+    color: #BCBCBC;
+}
+.form {
+    padding: 8px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 300px;
+
+    /* Para ver as bordas do formulário */
+    border-radius: 1em;
+    font-size: 16px
+}
+
+.form input {
+    margin-top: 7px;
+}
+
+input.email.formu {
+    margin-left: 0px;
+}
+
+.teste {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#date {
+    display: flex;
+    width: 75px;
+    height: 25px;
+    margin-left: 30px;
+    background-color: #0A0A0A;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    padding: 3px;
+    color: #BCBCBC;
+}
+
+.quit {
+    margin-left: 30px;
+}
+
+.apenas {
+    margin-left: 63px;
+
+}
+#escolha {
+    display: flex;
+    width: 122px;
+    height: 25px;
+    margin-left: 70px;
+    padding: 3px;
+}
+.transporte {
+    margin-left: 30px;
+}
+.teste .two {
+    margin-top: 20px;
+}
+.dados {
+    color: var(--atention);
+    margin-left: 30px;
+}
+
+.ok {
+    margin-left: 122px;
+    color: var(--atention);
+}
+
+#procurarpasseiro {
+    margin-top: 20px;
+    margin-left: 30px
+    
 }
