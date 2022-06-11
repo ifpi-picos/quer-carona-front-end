@@ -132,6 +132,7 @@ h2 a {
     margin-bottom: 30px;
     background: #FFFFFF;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #linha {
@@ -348,4 +349,35 @@ input.email.formu {
     margin-top: 20px;
     margin-left: 30px
     
+}
+
+/*#####################Escolha###############*/
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.container-2 {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.estiloh1 {
+    color: white;
+    text-align: center;
+    margin-top: 30%;
+}
+.button1 {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button2 {
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.logo-quer-carona {
+    margin: auto;
 }
