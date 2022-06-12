@@ -381,3 +381,10 @@ input.email.formu {
 .logo-quer-carona {
     margin: auto;
 }
+/*#####################Perfil###############*/
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+
+}
