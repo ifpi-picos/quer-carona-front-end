@@ -381,10 +381,33 @@ input.email.formu {
 .logo-quer-carona {
     margin: auto;
 }
-/*#####################Perfil###############*/
+/*#####################Perfil Passageiro###############*/
 .icon{
     display: flex;
     justify-content: center;
     margin-top: 75px;
 
+}
+.Botao {
+    
+    width: 290px;
+    height: 35px;
+    padding: 3px;
+    margin-right: 15px;
+    font-size: 15px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: -25px;
+    
+
+}
+.outro_p{
+    background-color:#FF0000;
+    color: var(--titulo);
+}
+.passageiro{
+    margin-block-start: 330px;
+    padding: 5px;
+    
 }
