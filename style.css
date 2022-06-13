@@ -291,6 +291,7 @@ form label {
 
 .form input {
     margin-top: 7px;
+    color: white;
 }
 
 input.email.formu {
