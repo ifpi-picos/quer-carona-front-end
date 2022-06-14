@@ -407,3 +407,17 @@ input.email.formu {
     padding: 5px;
     
 }
+/*##################### Perfil sobre voce ###############*/
+
+h5{
+    color: var(--titulo);
+    align-items:baseline;
+}
+.corpo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sim_nao{
+
+}
