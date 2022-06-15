@@ -389,7 +389,7 @@ input.email.formu {
     margin-top: 75px;
 
 }
-.caixa{
+.caixaNome{
     white-space: nowrap;
     
     padding: 5px;  
@@ -401,8 +401,24 @@ input.email.formu {
 
 }
 
+.caixaInformacao{
+    white-space: nowrap;
+    background-color:#0A0A0A;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    line-height: 20px;
+    width: 275px;
+    color: var(--titulo);
+
+
+}
+
+
 #procurarpassageiro {
-    margin-bottom: 1px;
+    margin-bottom: 4px;
     margin-right: 0px;
 
 }
@@ -410,12 +426,7 @@ input.email.formu {
     background-color:#FF0000;
     color: var(--titulo);
 }
-.passageiro{
-    margin-left: 30px;
-    margin-block-start: 330px;
-    padding: 5px;
-    
-}
+
 /*##################### Perfil sobre voce ###############*/
 
 h5{
@@ -459,4 +470,46 @@ h5{
     box-shadow: 0 0 0 0;
     outline: 0;
 
+}
+
+
+.fonte{
+    color: var(--titulo);
+    
+}
+
+.raio{
+
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.radio input[type=radio], input[type=checkbox]{
+    display:none; /* Esconde os inputs */
+    
+
+}
+
+.radio label {
+    cursor: pointer;
+    
+
+
+}
+.radio input[type="radio"] + label:before, input[type="checkbox"] {
+
+    border: 1px solid #5D5C5C;
+    content: "\00a0";
+    display: inline-block;
+    height: 16px;
+    margin: 0 0.25em 0 0;
+    padding: 1px;;
+    width: 16px;
+    border-radius:5px;
+
+}
+
+.radio input[type="radio"]:checked + label:before{
+    background: #F3B507;
+    content: "\2713"; 
 }
