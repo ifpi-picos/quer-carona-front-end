@@ -382,20 +382,28 @@ input.email.formu {
 .logo-quer-carona {
     margin: auto;
 }
-/*#####################Perfil Passageiro###############*/
+/*##################### Perfil Passageiro ###############*/
 .icon{
     display: flex;
     justify-content: center;
     margin-top: 75px;
 
 }
+.caixa{
+    white-space: nowrap;
+    
+    padding: 5px;  
+    background-color:#0A0A0A;
+    border-bottom: 2px solid #F3B507;
+    font-size: 30px;
+    width: 245px;
+    color: var(--titulo);
+
+}
+
 #procurarpassageiro {
     margin-bottom: 1px;
     margin-right: 0px;
-
-}
-#procurarpassageiro2 {
-    margin-top: 4px;
 
 }
 .outro_p{
