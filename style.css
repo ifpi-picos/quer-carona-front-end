@@ -389,7 +389,6 @@ input.email.formu {
     margin-top: 75px;
 
 }
-<<<<<<< HEAD
 .Botao {
     
     width: 290px;
@@ -402,54 +401,17 @@ input.email.formu {
     cursor: pointer;
     margin-bottom: -25px;
     
-=======
-.caixaNome{
-    white-space: nowrap;
-    
-    padding: 5px;  
-    background-color:#0A0A0A;
-    border-bottom: 2px solid #F3B507;
-    font-size: 30px;
-    width: 245px;
-    color: var(--titulo);
-
-}
-
-.caixaInformacao{
-    white-space: nowrap;
-    background-color:#0A0A0A;
-    border: 1px solid #4A4A4A;
-    border-radius: 5px;
-    font-size: 15px;
-    margin-bottom: 15px;
-    padding: 5px;
-    line-height: 20px;
-    width: 275px;
-    color: var(--titulo);
-
-
-}
-
-
-#procurarpassageiro {
-    margin-bottom: 4px;
-    margin-right: 0px;
->>>>>>> f3352c9646a1e7cbeb87bede0b629b06ed8ed2fd
 
 }
 .outro_p{
     background-color:#FF0000;
     color: var(--titulo);
 }
-<<<<<<< HEAD
 .passageiro{
     margin-block-start: 330px;
     padding: 5px;
     
 }
-=======
-
->>>>>>> f3352c9646a1e7cbeb87bede0b629b06ed8ed2fd
 /*##################### Perfil sobre voce ###############*/
 
 h5{
