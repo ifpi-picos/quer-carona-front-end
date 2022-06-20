@@ -339,10 +339,11 @@ input.email.formu {
 .dados {
     color: var(--atention);
     margin-left: 30px;
+    font-size: 16px;
 }
 
 .ok {
-    margin-left: 130px;
+    margin-left: 10px;
     color: var(--atention);
 }
 
@@ -415,9 +416,10 @@ input.email.formu {
 
 }
 .outro_p{
-    background-color:#FF0000;
-    color: var(--titulo);
+    background-color: yellow;
+    color: black;
     margin-left: 20px;
+    font-weight: bolder;
     height: 35px;
     width: 290px;
     border: none;
@@ -505,6 +507,7 @@ h5{
 .radio input[type="radio"] + label:before, input[type="checkbox"] {
 
     border: 1px solid #5D5C5C;
+    background-color: white;
     content: "\00a0";
     display: inline-block;
     height: 16px;
