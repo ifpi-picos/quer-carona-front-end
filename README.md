@@ -2,8 +2,8 @@
 <br>
 <h2 align="center">Equipe</h2>
 <div style="display:inline-block" align="center">
-<img align="center" alt="equipe" src="imagens/techninjas.png">
-<img height="280em" align="center" alt="equipe" src="imagens/imagemdaequipe.png">
+<img align="center" alt="equipe" src="/img/techninjas.png">
+<img height="280em" align="center" alt="equipe" src="/img/imagemdaequipe.png">
 </div>
 
 <h2 align="center">Projeto</h2>
@@ -13,7 +13,7 @@
 <div style="display:inline-block" align="center">
 <br>
 
-![Banner Quer Carona?](icons/android-chrome-512x512.png)
+![Banner Quer Carona?](/icons/android-chrome-512x512.png)
 
 ## Descrição do Projeto
 <p align="center">
