@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 3rem;
 }
 
 .container{
@@ -38,8 +38,6 @@
 .botao-cadastre:hover{
     background: #edd99d;
     filter: brightness(80%);
-
-
 }
 
 .botao-login{
@@ -151,7 +149,9 @@ footer {
     padding: 30px;
 }
 
-footer a {
+.footer-link {
     text-decoration: none;
-    color: var(--atention);
+    color: var(--cor-principal);
+    cursor: pointer;
+
 }
