@@ -4,7 +4,7 @@
 @import url("./CSS/perfil.css");
 @import url("./CSS/perfil-opcoes.css");
 @import url("./CSS/perfil_conta.css");
-
+@import url("./CSS/login/telaInicio.css");
 
 :root{
     --preto-principal:#0A0A0A;
