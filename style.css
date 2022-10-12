@@ -188,6 +188,7 @@ select[name="select"]{
     background: var(--cor-caixa-principal);
     box-shadow: var(--cor-sombra-caixa-principal);
     border-radius: 25px 25px 0 0;
+
     padding: 1rem;
     box-sizing: border-box;
 
@@ -226,6 +227,10 @@ select[name="select"]{
 }
 .footerInformacoes{
     color: var(--branco-simples);
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 30px;
 }
 
 

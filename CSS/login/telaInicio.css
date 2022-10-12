@@ -141,14 +141,6 @@
     cursor: pointer;
 }
 
-footer {
-    text-align: center;
-    font-size: 10px;
-    line-height: 12px;
-    color: white;
-    padding: 30px;
-}
-
 .footer-link {
     text-decoration: none;
     color: var(--cor-principal);
