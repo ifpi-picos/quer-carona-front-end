@@ -22,16 +22,19 @@
         </div>
     </header>
     <main>
-        <div >
-            <form action="" class="container-criarConta">
+        <div>
+            <form action="" class="container-criarConta form" id="form">
                 <h2>
                     Crie sua conta gratuita
                 </h2>
-                <label for="email">Digite seu e-mail</label>
-                <input type="email" name="email" class="email-criar" id="email" placeholder="Seu e-mail">
-                <button onclick="window.location.href = './html/login/login.html'" class="botao-continuar">Continuar com Email  </button>
+                <div class="email-criar--conta">
+                    <label for="email-criar">Digite seu e-mail</label>
+                    <input type="email-criar" name="email-criar" class="email-criar" id="email-criar" placeholder="Seu e-mail">
+                    <span class="error-message">Email inválido</span>
+                </div>
+                <button type="submit" onclick="" class="botao-continuar">Continuar com Email  </button>
                 <span class="login">Já possui uma conta
-                    <button onclick="window.location.href = './html/login/login.html'" class="botao-continuar--login">Login</button> 
+                    <button onclick="window.location.href = './login.html'" class="botao-continuar--login">Login</button> 
                 </span>
 
             </form>
@@ -41,5 +44,6 @@
         <p>Ao se cadastrar, você aceita nossos <a href="#" class="footer-link">Termos e Condições</a> e nossa<a href="#" class="footer-link">Política de Privacidade</a>. Você possui direitos sobre seus dados pessoais e pode exercê-los entrando em contato com o ‘Quer Carona?’ através do nosso <a href="#" class="footer-link">formulário de contato</a>. Para saber mais sobre seus direitos e sobre como lidamos com seus dados pessoais, confira nossa <a href="#" class="footer-link">Política de Privacidade</a>.</p>
             
     </footer>
+    <script src="../../frontend/assets/js/bundle.js"></script>
 </body>
 </html>

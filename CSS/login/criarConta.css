@@ -24,13 +24,30 @@
     border: 1px solid var(--branco-simples);
     border-radius: 5px;
     padding: .4rem 0;
-    padding-right: 4rem;
+    width: 90%;
     padding-left: .3rem;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-
-    
+    margin-top: .6rem; 
 }
+.email-criar--conta{
+    
+    text-align: center;
+}
+.error-message{
+    font-size: 11px;
+    padding: .2rem 0;
+    color: var(--cor-error);
+    font-style: italic;
+    display: none;
+}
+.show-error-message .error-message{
+    display: block;
+}
+.form .show-error-message input[type] {
+    border-color: var(--cor-error);
+}
+
 .botao-continuar{
     padding: .3rem 3rem;
     margin-top: 1rem;
@@ -46,6 +63,7 @@
 
 .login{
     font-size: 12px;
+    color: var(--branco-simples)
 }
 .botao-continuar--login{
     background: transparent;
@@ -57,5 +75,6 @@
 .footerInformacoes{
     margin-top: 3rem;
     text-align: justify;
+    color: var(--branco-simples);
 }
 

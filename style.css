@@ -5,6 +5,9 @@
 @import url("./CSS/perfil-opcoes.css");
 @import url("./CSS/perfil_conta.css");
 @import url("./CSS/login/telaInicio.css");
+@import url("./CSS/login/criarConta.css");
+@import url("./CSS/login/cadastrarNome.css");
+
 
 :root{
     --preto-principal:#0A0A0A;
@@ -12,6 +15,7 @@
     --branco-simples:#a4a4a4;
     --cor-principal:#F3B507;
     --cor-borda-simples:#4A4A4A;
+    --cor-error: #ef4a4a;
     --cor-sombra-botao: inset -2px -2px 5px rgba(0, 0, 0, 0.25);
     --cor-caixa-principal:linear-gradient(178.28deg, #282828 41.1%, rgba(25, 25, 25, 0.621461) 68.47%, rgba(0, 0, 0, 0) 98.54%);
     --cor-sombra-caixa-principal:inset 2px 2px 10px #F3B507, inset -2px -2px 10px #F3B507;
@@ -219,6 +223,9 @@ select[name="select"]{
     color: var(--cor-principal);
     font-size: 12px;
     box-sizing: border-box;
+}
+.footerInformacoes{
+    color: var(--branco-simples);
 }
 
 
