@@ -174,12 +174,14 @@ select[name="select"]{
 }
 
 .box__rodape{
-    box-sizing: border-box;
     position: fixed;
     width: 375px;
-
+    bottom: 0px;
 }
 
+/* position: fixed;
+width: 100%;
+bottom: 0px; */
 
 .rodape__lista{
     display: flex;

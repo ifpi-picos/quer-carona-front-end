@@ -60,7 +60,17 @@
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
 }
+.botao-continuar:hover{
+    background: var(--cor-principal);
+    color: var(--preto-principal);
+    transition: .2s;
 
+}
+
+.botao-continuar--login:hover{
+    color: var(--branco-principal);
+    transition: .2s;
+}
 .login{
     font-size: 12px;
     color: var(--branco-simples)
