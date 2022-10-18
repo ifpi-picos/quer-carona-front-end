@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <link rel="stylesheet" href="./public/assets/css/telaInicial.css">
+    <link rel ="apple-touch-icon"  href = "./public/assets/img/apple-touch-icon.png" >
+    <link rel="manifest" href="./json/manifest.json">
+    <link rel="icon" type="image/x-icon" href="./public/assets/img/favicon.ico">
+    <title>Tela de Inicio</title>
+</head>
+<body>
+    <header>
+        <div class="img-logo">
+            <img src="./public/assets/img/QuerCaronaLogo2.png" alt="logo Quer Carona?" >
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-botao">
+                <button onclick="window.location.href = './public/criarConta.html'" class="botao-cadastre">Cadastre-se</button>
+                <button onclick="window.location.href = './public/pegarCarona.html'" class="botao-login">Entrar</button>
+            </div>
+            <div id="linha">
+                <div class="left"></div>
+                <div class="or">OU</div>
+                <div class="right"></div>
+            </div>
+            <div id="apple">
+                <input type="submit" value="Continuar com a Apple" name="apple" class="configbutton selecion apple">
+            </div>
+            <div id="google">
+                <input id="txtgoogle" type="submit" value="Continuar com o Google" name="google" class="configbutton selecion apple">
+            </div>
+            
+        </div>
+    </main>
+    <footer class="footerInformacoes">
+        <p>O quer carona usa cookies para conteúdo e anúncios personalizados de análise. Ao usar os serviços do que
+            carona, você concorda com esse uso de cokkies. <a href="#" class="footer-link">Saber mais</a></p>
+    </footer>
+</body>
+</html>
