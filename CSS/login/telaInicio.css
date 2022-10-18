@@ -39,11 +39,15 @@
     color: var(--preto-principal);
     transition: .2s;
 }
+
+
+
 .botao-login:hover{
     background: var(--cor-principal);
     color: var(--preto-principal);
     box-shadow: var(--cor-sombra-botao);
     transition: .2s;
+    
 
 
 }
