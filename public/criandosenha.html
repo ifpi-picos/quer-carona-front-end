@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/criandoSenha.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/criarConta.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,30 +13,33 @@
     <link rel ="apple-touch-icon"  href = "./assets/img/apple-touch-icon.png" >
     <link rel="manifest" href="../json/manifest.json">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
-    <title>Criar Conta</title>
+    <title>Cadastro do Nome</title>
 </head>
 <body>
     <header>
-        <button onclick="window.location.href = './index.html'" class="setaES"><img class="seta" src="./assets/icons/setaES.svg" alt="imagem da seta"></button>
+        <button onclick="window.location.href = './cadastroNome.html'" class="setaES"><img class="seta" src="./assets/icons/setaES.svg" alt="imagem da seta"></button>
         <div class="img-logo-criar">
             <img src="./assets/img/QuerCaronaLogo2.png" alt="logo Quer Carona?" >
         </div>
     </header>
     <main>
         <div>
-            <form action="" class="container-criarConta form" id="form">
+            <form action="./pegarCarona.html" class="container-Nome formNome" id="formNome">
                 <h2>
-                    Crie sua conta gratuita
+                    Criar uma Senha
                 </h2>
-                <div class="email-criar--conta">
-                    <label for="email-criar">Digite seu e-mail</label>
-                    <input type="email" name="email-criar" class="email-criar" id="email-criar" placeholder="Seu e-mail">
-                    <span class="error-message" >Email inválido</span>
+                <div class="cadastrarSenha">
+                    <label  for="Psenha" class="labelSenha">Digite sua Senha</label>
+                    <input type="password" name="Psenha" class="inserirNome" id="Psenha" placeholder="Nova Senha" minlength="6" maxlength="14" required>
+                    <span class="nameError" role="alert" id="nameError" aria-hidden="true">Campo Não pode Fica Vazio</span>
                 </div>
-                <button type="submit" onclick="" class="botao-continuar">Continuar com Email  </button>
-                <span class="login">Já possui uma conta
-                    <button onclick="window.location.href = './login.html'" class="botao-continuar--login">Login</button> 
-                </span>
+                <div class="cadastrarSenha">
+                    <label for="Ssenha" class="labelSenha">Confirme sua Senha</label>
+                    <input type="password" name="Ssenha" class="inserirNome" id="Ssenha" placeholder="Digite Novamente" >
+                    <span class="nameError" role="alert" id="nameError" aria-hidden="true">Campo Não pode Fica Vazio</span>
+                </div>
+                <button type="submit" class="botao-continuar" id="submit">Continuar</button>
+                
 
             </form>
         </div>

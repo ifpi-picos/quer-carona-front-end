@@ -1,0 +1,13 @@
+.cadastrarSenha{
+    display: flex;
+    flex-direction: column;
+    
+}
+.labelSenha{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--branco-simples);
+    margin-top: 1rem;
+    margin-bottom: -.5rem;
+}
+

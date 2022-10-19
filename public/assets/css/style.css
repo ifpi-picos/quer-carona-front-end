@@ -7,12 +7,9 @@
 @import url('./perfil.css');
 @import url('./perfil_conta.css');
 @import url('./perfil-opcoes.css');
-
-
-
-
-
-
+@import url('./cadastrandoDataNasc.css');
+@import url('./login.css');
+@import url('./criandoSenha.css');
 
 
 :root{
