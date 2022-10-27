@@ -5,13 +5,13 @@ const form = document.querySelector(".form") as HTMLFormElement;
 const email = document.querySelector(".email-criar") as HTMLInputElement;
 const submitEventFn = (event: Event) => {
     // para nao enviar mais o formulario
-event.preventDefault();
-const target = event.target as HTMLFormElement;
-hideErrorMessages(target);
-// Criando as validações
-checkForEmptyFields(email);
-checkEmail(email);
-if (shouldSendForm(target)) window.location.href = './cadastroNome.html';
+    event.preventDefault();
+    const target = event.target as HTMLFormElement;
+    hideErrorMessages(target);
+    // Criando as validações
+    checkForEmptyFields(email);
+    checkEmail(email);
+    if (shouldSendForm(target)) window.location.href = './cadastroNome.html';
 };
 form.addEventListener("submit", submitEventFn);
 
