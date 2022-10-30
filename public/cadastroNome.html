@@ -24,16 +24,16 @@
     </header>
     <main>
         <div>
-            <form action="./criandosenha.html" class="container-Nome formNome" id="formNome">
+            <form action="./cadastrandoDataNasc.html" class="container-Nome formNome" id="formNome">
                 <h2>
                     Qual é o seu nome?
                 </h2>
                 <div class="cadastrarNome">
-                    <input type="text" name="firstname" class="inserirNome" id="firstname" placeholder="Nome*" minlength="3" maxlength="45" required >
+                    <input type="text" name="firstname" class="inserirNome" id="firstname" placeholder="Nome*"  pattern="^[a-zA-Z][a-zA-Z-_\.]{3,20}$" required >
                     <span class="nameError" role="alert" id="nameError" aria-hidden="true">Campo Não pode Fica Vazio</span>
                 </div>
                 <div class="cadastrarNome">
-                    <input type="text" name="firstname" class="inserirNome" id="firstname" placeholder="Sobrenome*" minlength="3" maxlength="60" required >
+                    <input type="text" name="firstname" class="inserirNome" id="firstname" placeholder="Sobrenome*" pattern="^[a-zA-Z][a-zA-Z-_\.]{3,20}$" required >
                     <span class="nameError" role="alert" id="nameError" aria-hidden="true">Campo Não pode Fica Vazio</span>
                 </div>
                 <button type="submit" class="botao-continuar" id="submit">Continuar</button>

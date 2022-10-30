@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/cadastrandoDataNasc.css">
+    <link rel="stylesheet" href="./assets/css/criarConta.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -15,6 +16,37 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <button onclick="window.location.href = './cadastroNome.html'" class="setaES"><img class="seta" src="./assets/icons/setaES.svg" alt="imagem da seta"></button>
+        <div class="img-logo-criar">
+            <img src="./assets/img/QuerCaronaLogo2.png" alt="logo Quer Carona?" >
+        </div>
+    </header>
+    <main>
+        <div>
+            <form action="./criandosenha.html" class="container-Nome formNomeData" id="formNomeData">
+                <h2>
+                    Data de Nascimento
+                </h2>
+                <div class="cadastrarData">
+                    
+                    <input type="date" name="Data" class="Data" id="Data">
+                    <label for="Data" class="Datalabel">Obrigatório 13+</label>
+                    <button type="submit" class="botao-continuar" id="submit">Continuar</button>
+                </div>
+            
+                
+                
+
+            </form>
+        </div>
+    </main>
+    <footer class="footerInformacoes">
+        <p>Ao se cadastrar, você aceita nossos <a href="#" class="footer-link">Termos e Condições</a> e nossa<a href="#" class="footer-link"> Política de Privacidade</a>. Você possui direitos sobre seus dados pessoais e pode exercê-los entrando em contato com o ‘Quer Carona?’ através do nosso <a href="#" class="footer-link">formulário de contato</a>. Para saber mais sobre seus direitos e sobre como lidamos com seus dados pessoais, confira nossa <a href="#" class="footer-link">Política de Privacidade</a>.</p>
+            
+    </footer>
+    <script src="./dist/index.js"></script>
+
+
 </body>
 </html>

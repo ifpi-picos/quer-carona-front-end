@@ -1,19 +1,20 @@
 import isEmail from "validator/lib/isEmail";
 
+
 const SHOW_ERROR_MESSAGES = "show-error-message";
-const form = document.querySelector(".form") as HTMLFormElement;
+const form = document.querySelector("#formEmail") as HTMLFormElement;
 const email = document.querySelector(".email-criar") as HTMLInputElement;
 const submitEventFn = (event: Event) => {
     // para nao enviar mais o formulario
-event.preventDefault();
-const target = event.target as HTMLFormElement;
-hideErrorMessages(target);
-// Criando as validações
-checkForEmptyFields(email);
-checkEmail(email);
-if (shouldSendForm(target)) window.location.href = './cadastroNome.html';
+    event.preventDefault();
+    const target = event.target as HTMLFormElement;
+    hideErrorMessages(target);
+    // Criando as validações
+    checkForEmptyFields(email);
+    checkEmail(email);
+    if (shouldSendForm(target)) window.location.href = './cadastroNome.html';
 };
-form.addEventListener("submit", submitEventFn);
+form?.addEventListener("submit", submitEventFn);
 
 function checkForEmptyFields(...inputs: HTMLInputElement[]): void {
     inputs.forEach((input) => {
@@ -46,5 +47,7 @@ function shouldSendForm(form: HTMLFormElement): boolean {
 }
 
 
-// testando
+console.log('validando email')
 
+import './validandoNome';
+import './validandoSenha';

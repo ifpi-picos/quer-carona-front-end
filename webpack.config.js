@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   mode: process.env.NODE_ENV || "development",
   entry: {
-    index: ['./src/index.ts', './src/validando.ts']
+    index: ['./src/index.ts']
 },
   module: {
     rules: [

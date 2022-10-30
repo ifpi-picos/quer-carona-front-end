@@ -20,6 +20,8 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
+    "@types/jquery": "^3.5.14",
+    "jquery": "^3.6.1",
     "validator": "^13.7.0"
   }
 }

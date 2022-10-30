@@ -17,28 +17,29 @@
 </head>
 <body>
     <header>
-        <button onclick="window.location.href = './cadastroNome.html'" class="setaES"><img class="seta" src="./assets/icons/setaES.svg" alt="imagem da seta"></button>
+        <button onclick="window.location.href = './cadastrandoDataNasc.html'" class="setaES"><img class="seta" src="./assets/icons/setaES.svg" alt="imagem da seta"></button>
         <div class="img-logo-criar">
             <img src="./assets/img/QuerCaronaLogo2.png" alt="logo Quer Carona?" >
         </div>
     </header>
     <main>
         <div>
-            <form action="./pegarCarona.html" class="container-Nome formNome" id="formNome">
+            <form action="" class="container-Nome formNome" id="formSenha">
                 <h2>
                     Criar uma Senha
                 </h2>
                 <div class="cadastrarSenha">
                     <label  for="Psenha" class="labelSenha">Digite sua Senha</label>
-                    <input type="password" name="Psenha" class="inserirNome" id="Psenha" placeholder="Nova Senha" minlength="6" maxlength="14" required>
-                    <span class="nameError" role="alert" id="nameError" aria-hidden="true">Campo Não pode Fica Vazio</span>
+                    <input type="password" name="Psenha" class="Psenha" id="Psenha" placeholder="Nova Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,15}$" title="Senha deve conter entre 6 a 15 caracteres, pelo menos UMA letra maiúscula, UM número e NÃO deve conter símbolos"
+                    ">
+                    <span class="error-message1">Campo Não pode Fica Vazio</span>
                 </div>
                 <div class="cadastrarSenha">
-                    <label for="Ssenha" class="labelSenha">Confirme sua Senha</label>
-                    <input type="password" name="Ssenha" class="inserirNome" id="Ssenha" placeholder="Digite Novamente" >
-                    <span class="nameError" role="alert" id="nameError" aria-hidden="true">Campo Não pode Fica Vazio</span>
+                    <label for="Psenha" class="labelSenha">Confirme sua Senha</label>
+                    <input type="password" name="Psenha2" class="Psenha2" id="Psenha2" placeholder="Digite Novamente" >
+                    <span class="error-message1">Campo Não pode Fica Vazio</span>
                 </div>
-                <button type="submit" class="botao-continuar" id="submit">Continuar</button>
+                <button id="senhaButton" type="submit" onclick="" class="botao-continuar" >Continuar</button>
                 
 
             </form>
@@ -49,5 +50,6 @@
             
     </footer>
     <script src="./dist/index.js"></script>
+
 </body>
 </html>
