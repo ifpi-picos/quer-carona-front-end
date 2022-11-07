@@ -1,0 +1,9 @@
+#logobr {
+    background-image: url(../img/logobr.png) !important;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+    background-position-y: center;
+    background-position-x: 98%;
+}

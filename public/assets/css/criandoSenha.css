@@ -28,10 +28,10 @@
     background: #0A0A0A;
     border: 1px solid var(--branco-simples);
     border-radius: 5px;
-    padding: .4rem 0;
-    width: 90%;
-    padding-left: .4rem;
+    padding: 0.4rem 3rem;
+    width: 75.5%;
+    padding-left: 1rem;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    margin-top: .6rem; 
+    margin-top: 0.6rem; 
 }
