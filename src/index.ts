@@ -1,5 +1,5 @@
 import isEmail from "validator/lib/isEmail";
-
+import axios from "axios";
 
 const SHOW_ERROR_MESSAGES = "show-error-message";
 const form = document.querySelector("#formEmail") as HTMLFormElement;
@@ -51,3 +51,43 @@ console.log('validando email')
 
 import './validandoNome';
 import './validandoSenha';
+
+type User = {
+    id: number;
+    email: string;
+    firs_name: string;
+}
+
+type GetUsersResponse = { 
+    data: User[];
+}
+
+async function getUsers() {
+    try {
+        const { data, status} = await axios.get<GetUsersResponse>(
+            'http://localhost:3000/',
+            {
+                headers: {
+                    Accept: 'application/json',
+                }
+            }
+        )
+
+        console.log(JSON.stringify(data, null, 4))
+
+        console.log('response status is:', status)
+        
+        return data
+    } catch (error) {
+        if (axios.isAxiosError(error)) {
+            console.log('erro message:', error.message)
+            return error.message
+        } else {
+            console.log('unexpected error: ', error)
+            return 'An unexpected error occurred'
+        }
+    }
+}
+
+getUsers()
+
