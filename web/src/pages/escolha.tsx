@@ -14,8 +14,8 @@ export default function Escolha() {
       <h1 className='text-white text-lg mb-8'>O que você deseja fazer?</h1>
       <main className='w=[281px]'>
         <div className='flex flex-col  text-white w-[251px] gap-2'>
-            <button className='rounded bg-slate-800 hover:bg-slate-700'>Pegar carona</button>
-            <button className='rounded bg-slate-800 hover:bg-slate-700'>Dar carona</button>
+            <button className='rounded bg-slate-800 hover:bg-slate-700'><Link href="/pegarcarona"> Pegar carona</Link></button>
+            <button className='rounded bg-slate-800 hover:bg-slate-700'><Link href="/oferecercarona"> Dar carona</Link></button>
         </div>
       </main>
     </div>

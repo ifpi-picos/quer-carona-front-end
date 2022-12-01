@@ -20,10 +20,10 @@ export default function Login() {
                     <input className='h-9 p-2 rounded bg-slate-900' type="password" name="senha" id="senha" placeholder='Sua senha' />
                 </div>
                 <div>
-                    <button className='text-yellow-900 text-xs'><Link href="/" >Esqueceu sua senha?</Link></button>
+                    <button className='text-yellow-900 text-xs hover:bg-yellow-300'><Link href="/" >Esqueceu sua senha?</Link></button>
                 </div>
                 <div className='flex items-center justify-center'>
-                    <button className='bg-white rounded mt-1 p-1 w-[150px] hover:bg-slate-300' type='submit'>Entrar</button>
+                    <button className='bg-white rounded mt-1 p-1 w-[150px] hover:bg-slate-300' type='submit'><Link href="/escolha"> Entrar</Link></button>
                 </div>
                 <Lines></Lines>
                 <Icons></Icons>
