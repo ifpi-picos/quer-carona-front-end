@@ -1,5 +1,9 @@
+import Link from 'next/link'
 import Image from "next/image"
 import logo from '../../public/assets/img/QuerCaronaLogo2.png'
+import Lines from "../components/Lines"
+import Icons from "../components/Icons";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -8,11 +12,14 @@ export default function Home() {
       <Image src={logo} alt="Logo princinpal do App" />
 
       <div>
-        <main>
-          <div className="flex flex-col justify-center w-[281px] gap-4 mb-4">
-            <button className=" pr-[.3rem] pl-2 rounded-[5px] bg-yellow-900 cursor-pointer shadow text-black-900 font-bold text-lg hover:bg-white">Cadastre-se</button>
-            <button className=" pr-[.3rem] pl-2 rounded-[5px] bg-slate-800  cursor-pointer shadow text-white font-bold text-lg">Entrar</button>
+        <main className="w-[281px]">
+          <div className="flex flex-col justify-center w-[281px] gap-2 mb-4">
+            <button className=" pr-[.3rem] pl-2 rounded-[5px] bg-yellow-900 cursor-pointer shadow text-black-900 font-bold text-lg hover:bg-yellow-300"><Link href="/cadastro">Cadastre-se</Link></button>
+            <button className=" pr-[.3rem] pl-2 rounded-[5px] bg-slate-800  cursor-pointer shadow text-white font-bold text-lg hover:bg-slate-700"><Link href="/login"> Entrar</Link></button>
           </div>
+          <Lines />
+          <Icons />
+          <Footer />
           
         </main>
       </div>

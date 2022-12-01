@@ -8,6 +8,11 @@ module.exports = {
         sans: 'Roboto, sans-serif'
       },
 
+      backgroundImage: {
+        apple: "url('/public/assets/img/apple.png')",
+        google: "url('/public/assets/img/google.png')",
+      },
+
       colors: {
         black: {
           900: '#040404'
