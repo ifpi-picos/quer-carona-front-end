@@ -4,11 +4,14 @@ import logo from '../../public/assets/img/QuerCaronaLogo2.png'
 import Lines from "../components/Lines"
 import Icons from "../components/Icons";
 import Footer from "../components/Footer";
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <div className="max-w=[375px] max-h=[670] mx-auto flex flex-col items-center justify-center mt-4">
-
+      <Head>
+        <title>Quer Carona?</title>
+      </Head>
       <Image src={logo} alt="Logo princinpal do App" />
 
       <div>

@@ -53,13 +53,13 @@ export default function TeladePerfil() {
                                 <p className="text-white">Adicionar veículo</p>
                             </div>
                         </div>
-                        <div className='flex justify-between items-center w-[358px] h-[70px] bg-slate-900 mb-20 rounded border-t-2 border-yellow-900 mt-4'> 
-                        <div className='flex flex-col items-center text-white text-xs'><AiOutlineMonitor className='w-[30px] h-[30px] text-white' /><Link href="/pegarcarona"> Procurar</Link></div>
-                        <div className='flex flex-col items-center text-white text-xs cursor-pointer'><IoMdCompass className='w-[30px] h-[30px] text-white' /><Link href="/oferecercarona"> Oferecer</Link></div>
-                        <div className='flex flex-col items-center text-white text-xs cursor-pointer'><TbArrowsLeftRight className='w-[30px] h-[30px] text-white' /><Link href="/suasViagens"> Viagens</Link></div>
-                        <div className='flex flex-col items-center text-white text-xs cursor-pointer'><AiFillMessage className='w-[30px] h-[30px] text-white' /><Link href="/telaDeMensagens"> Mensagens</Link></div>
-                        <div className='flex flex-col items-center text-yellow-900 text-xs cursor-pointer'><AiFillSmile className='w-[30px] h-[30px] text-yellow-900' /><Link href="/telaDePerfil"> Perfil</Link></div>
-                </div>
+                        <div className='flex justify-around items-center w-[358px] h-[70px] bg-slate-900 mb-20 rounded border-t-2 border-yellow-900 mt-4'> 
+                            <div className='flex flex-col items-center text-white text-xs hover:text-yellow-900'><Link className="flex flex-col justify-center items-center" href="/pegarcarona"><AiOutlineMonitor className='w-[30px] h-[30px] text-white hover:text-yellow-900' /> Procurar</Link></div>
+                            <div className='flex flex-col items-center text-white text-xs cursor-pointer hover:text-yellow-900'><Link className="flex flex-col justify-center items-center" href="/oferecercarona"><IoMdCompass className='w-[30px] h-[30px] text-white hover:text-yellow-900' /> Oferecer</Link></div>
+                            <div className='flex flex-col items-center text-white text-xs cursor-pointer hover:text-yellow-900'><Link className="flex flex-col justify-center items-center" href="/suasViagens"><TbArrowsLeftRight className='w-[30px] h-[30px] text-white hover:text-yellow-900' /> Viagens</Link></div>
+                            <div className='flex flex-col items-center text-white text-xs cursor-pointer hover:text-yellow-900'><Link className="flex flex-col justify-center items-center" href="/telaDeMensagens"><AiFillMessage className='w-[30px] h-[30px] text-white hover:text-yellow-900' /> Mensagens</Link></div>
+                            <div className='flex flex-col items-center text-yellow-900 text-xs cursor-pointer hover:text-yellow-900'><Link className="flex flex-col justify-center items-center" href="/telaDePerfil"><AiFillSmile className='w-[30px] h-[30px] text-yellow-900 hover:text-yellow-900' /> Perfil</Link></div>
+                        </div>
                         
                     </div>
                 </div>
