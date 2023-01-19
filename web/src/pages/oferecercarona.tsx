@@ -14,6 +14,7 @@ import { LngLat, MapProvider, Marker, useMap } from "react-map-gl";
 import MyMap from "../components/Map";
 import Start from "../components/Start.";
 import axios from "axios";
+import { useRouter } from "next/router";
 
 export default function OferecerCarona() {
   const AddressAutofill = dynamic(
@@ -28,6 +29,8 @@ export default function OferecerCarona() {
     horario: "",
     vagas: "",
   });
+
+  const router = useRouter();
 
   const [markers, setMarkers] = useState<
     { lat: number | undefined; lng: number | undefined; color?: string }[]
@@ -81,6 +84,7 @@ export default function OferecerCarona() {
           end: `${endPoint?.lat};${endPoint?.lng}`
         }
         const response = await axios.post("https://quer-carona-back-end.onrender.com/corridas/", reqData, {withCredentials: true});
+        router.replace("/escolha");
     } catch (error) {
         console.error();
     }
