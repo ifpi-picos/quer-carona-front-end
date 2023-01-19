@@ -8,18 +8,22 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import { parse } from "date-fns";
 export default function Cadastro() {
   const [data, setData] = useState({
     nome: "",
     email: "",
     senha: "",
     isenha: "",
+    data_nascimento: "",
+    telefone: ""
   });
   const [hasError, setHasError] = useState(false);
   const router = useRouter();
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const name = (event.target as HTMLInputElement).name;
     const value = (event.target as HTMLInputElement).value;
+    console.log(value);
     setData((values) => ({ ...values, [name]: value }));
   };
 
@@ -34,10 +38,11 @@ export default function Cadastro() {
     const finalData = {
       nome: data.nome,
       email: data.email,
-      data_nascimento: new Date(),
+      data_nascimento: parse(data.data_nascimento, "yyyy-MM-dd", new Date()),
       senha: data.senha,
+      telefone: data.telefone
     };
-    await axios.post("http://localhost:3001/users/", finalData);
+    await axios.post("https://quer-carona-back-end.onrender.com/users/", finalData);
     router.push("/escolha");
   };
 
@@ -67,7 +72,6 @@ export default function Cadastro() {
           </div>
           <div className="flex flex-col gap-1">
             <label className="text-slate-300 mb-1" htmlFor="email">
-              {" "}
               Seu e-mail
             </label>
             <input
@@ -83,7 +87,6 @@ export default function Cadastro() {
           </div>
           <div className="flex flex-col gap-1">
             <label className="text-slate-300 mb-1" htmlFor="senha">
-              {" "}
               Sua senha
             </label>
             <input
@@ -99,7 +102,6 @@ export default function Cadastro() {
           </div>
           <div className="flex flex-col gap-1">
             <label className="text-slate-300 mb-1" htmlFor="isenha">
-              {" "}
               Confirme sua senha
             </label>
             <input
@@ -110,6 +112,36 @@ export default function Cadastro() {
               type="password"
               placeholder="Confirme sua Senha"
               value={data.isenha}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label className="text-slate-300 mb-1" htmlFor="email">
+              Telefone
+            </label>
+            <input
+              className="h-9 p-2 bg-slate-900 rounded text-white"
+              id="telefone"
+              name="telefone"
+              required
+              type="tel"
+              placeholder="Digite seu telefone"
+              value={data.telefone}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label className="text-slate-300 mb-1" htmlFor="isenha">
+              Data de Nascimento
+            </label>
+            <input
+              className="h-9 p-2 bg-slate-900 rounded text-white"
+              name="data_nascimento"
+              id="data_nascimento"
+              required
+              type="date"
+              placeholder="Data de Nascimento"
+              value={data.data_nascimento}
               onChange={handleChange}
             />
           </div>
